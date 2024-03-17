@@ -1,0 +1,11 @@
+<form (ngSubmit)="onApplyFilter()" [formGroup]="filterForm" class="filter-container">
+  <div>
+    <label for="stockKeepingUnit">Description:</label>
+    <input formControlName="description" id="stockKeepingUnit" type="text">
+  </div>
+  <div>
+    <label for="country">Country:</label>
+    <input formControlName="country" id="country" type="text">
+  </div>
+  <button type="submit">Apply Filters</button>
+</form>

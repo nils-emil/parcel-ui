@@ -1,0 +1,23 @@
+<table>
+  <thead>
+  <tr>
+    <th>Tracking ID</th>
+    <th>Stock Keeping Unit</th>
+    <th>Description</th>
+    <th>Street</th>
+    <th>Country</th>
+    <th>Delivery Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let parcel of parcels">
+    <td>{{parcel.trackingId}}</td>
+    <td>{{parcel.stockKeepingUnit}}</td>
+    <td>{{parcel.description}}</td>
+    <td>{{parcel.street}}</td>
+    <td>{{parcel.town}}</td>
+    <td>{{parcel.country}}</td>
+    <td>{{parcel.deliveryDate | date}}</td>
+  </tr>
+  </tbody>
+</table>

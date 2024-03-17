@@ -1,0 +1,53 @@
+<div class="form-container">
+  <form (ngSubmit)="onSubmit()" [formGroup]="parcelForm" class="form">
+    <div>
+      <label for="sku">Stock Keeping Unit:</label>
+      <input formControlName="stockKeepingUnit" id="sku" type="text">
+      <div *ngIf="parcelForm.controls['stockKeepingUnit'].touched && parcelForm.controls['stockKeepingUnit'].invalid"
+           class="validation-error">
+        Invalid
+      </div>
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <input formControlName="description" id="description" type="text">
+      <div *ngIf="parcelForm.controls['description'].touched && parcelForm.controls['description'].invalid"
+           class="validation-error">
+        Invalid
+      </div>
+    </div>
+    <div>
+      <label for="town">Street:</label>
+      <input formControlName="street" id="town" type="text">
+      <div *ngIf="parcelForm.controls['street'].touched && parcelForm.controls['street'].invalid"
+           class="validation-error">
+        Invalid
+      </div>
+    </div>
+    <div>
+      <label for="streetAddress">Street Address:</label>
+      <input formControlName="town" id="streetAddress" type="text">
+      <div *ngIf="parcelForm.controls['town'].touched && parcelForm.controls['town'].invalid"
+           class="validation-error">
+        Invalid
+      </div>
+    </div>
+    <div>
+      <label for="country">Country:</label>
+      <input formControlName="country" id="country" type="text">
+      <div *ngIf="parcelForm.controls['country'].touched && parcelForm.controls['country'].invalid"
+           class="validation-error">
+        Invalid
+      </div>
+    </div>
+    <div>
+      <label for="deliveryDate">Delivery Date:</label>
+      <input formControlName="deliveryDate" id="deliveryDate" type="date">
+      <div *ngIf="parcelForm.controls['deliveryDate'].touched && parcelForm.controls['deliveryDate'].invalid"
+           class="validation-error">
+        Invalid
+      </div>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
