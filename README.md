@@ -21,10 +21,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Having a good test setup
   - Would be nice to have a test setup, using Cypress or alternative, that would test the application from the user's perspective.
 * Configuration via .env file
-  - The API URL should come from a .env file [like this](https://github.com/nils-emil/resto-order-client-ui/blob/master/Dockerfile).
+  - The API URL should come from a .env file [like this](https://github.com/nils-emil/resto-order-client-ui/blob/master/Dockerfile)
   - Currently the API URL is hardcoded in the ParcelService file :(
 * Having a production build
 * Having a linter setup
+* Showing a more specific error when the form field is invalid
 
 ## Development server
 
